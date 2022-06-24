@@ -1,0 +1,29 @@
+name: Node.js CI
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+
+    strategy:
+      matrix:
+        node-version: [10.19.0]
+        operating-system: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install -g cmake-js@5.3.2
+      - run: npm install
+      - name: Environment Information
+        run: npx envinfo
+      - name: Run Test
+        run: npm test

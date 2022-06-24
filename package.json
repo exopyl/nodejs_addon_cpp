@@ -1,0 +1,21 @@
+{
+  "name": "addon_animals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-gyp": "^9.0.0"
+  },
+  "dependencies": {
+    "mocha": "9.0.0",
+    "node-addon-api": "^5.0.0"
+  }
+}
