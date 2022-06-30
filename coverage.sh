@@ -19,7 +19,8 @@ export CXXFLAGS="-fprofile-instr-generate -fcoverage-mapping"
 export LDFLAGS="-fprofile-instr-generate"
 
 #make debug
-node-gyp rebuild --loglevel=error --debug
+#node-gyp rebuild --loglevel=error --debug
+npm run build_debug
 
 rm -f *profraw
 rm -f *gcov
