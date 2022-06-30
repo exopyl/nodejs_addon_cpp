@@ -27,7 +27,6 @@ jobs:
           apt-get update
           apt-get -y upgrade
           apt-get install --no-install-recommends -y python3 build-essential nodejs npm yarn mocha llvm clang-10
-          apt-get clean && rm -rf /var/lib/apt/lists/*
           
       - run: npm install -g cmake-js@5.3.2
       - run: npm install
