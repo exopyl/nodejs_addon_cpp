@@ -6,6 +6,7 @@
   "gypfile": true,
   "scripts": {
     "build": "node-gyp rebuild",
+    "build_debug": "node-gyp rebuild --loglevel=error --debug",
     "clean": "node-gyp clean",
     "test": "mocha"
   },
