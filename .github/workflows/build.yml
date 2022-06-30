@@ -25,6 +25,8 @@ jobs:
       - run: npm install
       - name: Environment Information
         run: npx envinfo
+      - name: Build debug
+        run: npm run build_debug
       - name: Run Test
         run: npm test
       - name: Grant execute permission for coverage.sh
