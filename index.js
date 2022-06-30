@@ -1,4 +1,4 @@
-const addon = require('./build/Release/addon_animals.node');
+const addon = require('./build/Debug/addon_animals.node');
 console.log('addon',addon);
 //console.log('hello ', addon.hello());
 //console.log('add ', addon.add(5, 10));
