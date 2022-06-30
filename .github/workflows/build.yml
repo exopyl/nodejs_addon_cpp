@@ -24,9 +24,9 @@ jobs:
           
       - name: Install dependencies
         run: |
-          apt-get update
-          apt-get -y upgrade
-          apt-get install --no-install-recommends -y python3 build-essential nodejs npm yarn mocha llvm clang-10
+          sudo apt-get update
+          sudo apt-get -y upgrade
+          sudo apt-get install --no-install-recommends -y python3 build-essential nodejs npm yarn mocha llvm clang-10
           
       - run: npm install -g cmake-js@5.3.2
       - run: npm install
