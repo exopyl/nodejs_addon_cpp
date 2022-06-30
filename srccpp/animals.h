@@ -3,6 +3,7 @@
 class IAnimal
 {
 public:
+    IAnimal() {};
     virtual ~IAnimal();
 
     virtual const std::string Speak() const = 0;
