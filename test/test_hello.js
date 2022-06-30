@@ -1,4 +1,4 @@
-const addon = require('../build/Release/addon_animals.node');
+const addon = require('../build/Debug/addon_animals.node');
 const assert = require('assert');
 
 
